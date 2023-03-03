@@ -1,0 +1,8 @@
+//
+// Created by coolj on 3/2/2023.
+//
+
+#ifndef HOMEWORKCPP3FINAL_CLASS_H
+#define HOMEWORKCPP3FINAL_CLASS_H
+
+#endif //HOMEWORKCPP3FINAL_CLASS_H
