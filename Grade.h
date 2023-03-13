@@ -23,8 +23,8 @@ public:
     void set_n(double);
     void set_coef(int);
     string get_matter();
-    double get_n();
-    int get_coef();
+    double get_n() const;
+    int get_coef() const;
 
     //Overloading Ops
     friend ostream& operator <<(ostream&,const grade&);
@@ -44,8 +44,8 @@ void grade::set_coef(int c) {coef=c;}
 void grade::set_n(double nb) {n=nb;}
 
 string grade::get_matter() {return matter;}
-double grade::get_n() {return n;}
-int grade::get_coef() {return coef;}
+double grade::get_n() const {return n;}
+int grade::get_coef() const {return coef;}
 
 ostream& operator <<(ostream&os,const grade&g){os<<"Matter : "<<g.matter<<", grade : "<<g.n<<" and of coefficient :"<<g.coef<<endl;return(os);};
 istream& operator >>(istream&is, grade&g){cout<<"Matter is :";is>>g.matter;cout<<"With a grade of :";is>>g.n;cout<<"And a coefficient of :";is>>g.coef;}
