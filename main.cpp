@@ -1,11 +1,11 @@
 #include <iostream>
-#include "date.h"
-#include "grade.h"
-#include "student.h"
-#include "class.h"
+#include "Date.h"
+#include "Grade.h"
+#include "Student.h"
+#include "Class.h"
 using namespace std;
 
 int main() {
-   cout << "Hello, World!" << endl;
-    return 0;
+
+return 0;
 }
