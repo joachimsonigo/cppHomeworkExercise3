@@ -77,9 +77,12 @@ void myclass::display_students() {
 double myclass::calculate_class_average() {
     double sum = 0.0;
     for (int i = 0; i < N; i++) {
-        sum += students[i].calculate_average();
+        if (students[i].calculate_average()>0)
+            sum += students[i].calculate_average();
+        else
+            sum=sum;
     }
-    return sum / students.size();
+    return sum / N;
 }
 
 void myclass::display_class_average() {

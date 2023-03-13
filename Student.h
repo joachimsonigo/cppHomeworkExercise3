@@ -69,6 +69,6 @@ ostream& operator <<(ostream&os,const student&s){os<<"Name: "<<s.name<<", last n
 istream& operator >>(istream&is, student&s){cout<<"name:";is>>s.name;cout<<"last name :";is>>s.lname;cout<<"Birthdate :";is>>s.ddn;cout<<"Grades :";is>>s.g1;is>>s.g2;is>>s.g3;cout<<"Average :";is>>s.average;}
 
 //Definition of Methods
-double student::calculate_average() const {double a;a= ((g1.grade::get_n() * g1.grade::get_coef()) + (g2.grade::get_n() * g2.grade::get_coef()) + (g3.grade::get_n() * g3.grade::get_coef())) / (g1.grade::get_coef() + g2.grade::get_coef() + g3.grade::get_coef());return a;}
+double student::calculate_average() const {double a;a= ((g1.grade::get_n() * g1.grade::get_coef()) + (g2.grade::get_n() * g2.grade::get_coef()) + (g3.grade::get_n() * g3.grade::get_coef())) / (g1.grade::get_coef() + g2.grade::get_coef() + g3.grade::get_coef());if(a>0){return a;}else{return 0;};}
 void student::display() {cout<<"The student is named : "<<name<<" "<<lname<<".\nThey are born on the "<<ddn.date::get_day()<<" of "<<ddn.date::get_month()<<" in the year "<<ddn.date::get_year()<<".\nThey've gotten the following grades: "<<g1.grade::get_n()<<" in "<<g1.grade::get_matter()<<" with a coefficient of "<<g1.grade::get_coef()<<".\n"<<endl;cout<<g2.grade::get_n()<<" in "<<g2.grade::get_matter()<<" with a coefficient of "<<g2.grade::get_coef()<<".\n"<<endl;cout<<g3.grade::get_n()<<" in "<<g3.grade::get_matter()<<" with a coefficient of "<<g3.grade::get_coef()<<"."<<endl;}
 #endif //HOMEWORKCPP3FINAL_STUDENT_H
