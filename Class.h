@@ -5,30 +5,6 @@ using namespace std;
 #include <iostream>
 #ifndef HOMEWORKCPP3FINAL_CLASS_H
 #define HOMEWORKCPP3FINAL_CLASS_H
-/*
-class homeroom:public student{
-private:
-student classroom[40];
-student sortedclass[40];
-float gpa;
-static int N;
-
-public:
-homeroom();
-homeroom(student,student,float);
-virtual ~homeroom();
-
-
-//void disp_class();
-};
-homeroom::homeroom() {classroom[N]=student(),sortedclass[N]=student();N++;}
-void homeroom::disp_class() {
-    cout<<"Class"<<endl;
-    for (int i = 0; i < N; ++i) {
-        cout<<classroom[i]<<endl;
-    }
-}
-*/
 
 #include <vector>
 #include <algorithm>
